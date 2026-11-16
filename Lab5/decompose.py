@@ -4,7 +4,6 @@ from web3.middleware import ExtraDataToPOAMiddleware
 w3 = Web3(Web3.HTTPProvider("https://l1testnet.trustkeys.network"))
 w3.middleware_onion.inject(ExtraDataToPOAMiddleware, layer=0)
 
-# TODO: THAY THẾ CHUỖI NÀY BẰNG TRANSACTION HASH GIAO DỊCH CỦA BẠN TRONG METAMASK
 h = "0xf854ed6e3c595c578f2db4516c6c9b29c2c18fcf416cb69f223a68266d12673b"
 
 try:
